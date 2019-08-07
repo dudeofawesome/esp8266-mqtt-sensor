@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "/Users/dudeofawesome/Library/Arduino15/packages/esp8266/tools/**",
+        "/Users/dudeofawesome/Library/Arduino15/packages/esp8266/hardware/esp8266/2.5.2/**",
+        "/Users/dudeofawesome/Library/Arduino15/packages/esp8266/hardware/esp8266/2.5.2/tests/host/common",
+        "/Users/dudeofawesome/Library/Arduino15/packages/esp8266/hardware/esp8266/2.5.2/tests/host",
+        "/Users/dudeofawesome/Library/Arduino15/packages/esp8266/hardware/esp8266/2.5.2/tools/sdk/include",
+        "/Users/dudeofawesome/Library/Arduino15/packages/esp8266/hardware/esp8266/2.5.2/cores/esp8266",
+
+        "/Users/dudeofawesome/Documents/Arduino/libraries/**",
+        "/Users/dudeofawesome/Documents/Arduino/libraries/EspMQTTClient/src/**",
+        "/Users/dudeofawesome/Documents/Arduino/libraries/MH-Z-CO2-Sensors",
+        "${workspaceFolder}/**"
+      ],
+      "forcedInclude": [],
+      "macFrameworkPath": ["/System/Library/Frameworks", "/Library/Frameworks"],
+      "intelliSenseMode": "clang-x64",
+      "compilerPath": "/usr/bin/clang",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
