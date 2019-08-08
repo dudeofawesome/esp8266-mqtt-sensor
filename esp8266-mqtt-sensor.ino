@@ -82,12 +82,15 @@ void loop() {
 
     Serial.println();
 
-    char ppm_update[100];
-    (CLIENT_NAME + String("/ppm")).toCharArray(ppm_update, 100);
-    client.publish(ppm_update, String(ppm_uart).c_str());
-    char temp_update[100];
-    (CLIENT_NAME + String("/temp")).toCharArray(temp_update, 100);
-    client.publish(temp_update, String(temperature).c_str());
+    if (ppm_uart > 0) {
+      char ppm_update[100];
+      (CLIENT_NAME + String("/ppm")).toCharArray(ppm_update, 100);
+      client.publish(ppm_update, String(ppm_uart).c_str());
+
+      char temp_update[100];
+      (CLIENT_NAME + String("/temp")).toCharArray(temp_update, 100);
+      client.publish(temp_update, String(temperature).c_str());
+    }
 
     delay(5000);
   }
